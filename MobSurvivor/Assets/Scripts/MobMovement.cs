@@ -8,14 +8,14 @@ public class MobMovement : MonoBehaviour
     public float moveSpeed = 0.2f;
     private Rigidbody2D rb;
     private Vector2 direction;
-    //private Vector2 movement;
-
+    public bool isCollision;
 
 
     // Start is called before the first frame update
     void Start()
     {
         rb = this.GetComponent<Rigidbody2D>();
+        player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     // Update is called once per frame
@@ -30,8 +30,8 @@ public class MobMovement : MonoBehaviour
     private void FixedUpdate() 
         //FixedUpdate is called every Frame per Framerate
     {
-        //moveCharacter(movement);
-        moveCharacter(direction);
+        if(!isCollision)
+            moveCharacter(direction);
     }
 
     void moveCharacter(Vector2 direction)
@@ -39,5 +39,14 @@ public class MobMovement : MonoBehaviour
         Physics2D.SyncTransforms();
         rb.MovePosition((Vector2)transform.position + (direction * moveSpeed * Time.deltaTime));
         //rb.MovePosition(Vector2 position);
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        isCollision = true;
+    }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        isCollision = false;
     }
 }
