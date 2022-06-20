@@ -5,7 +5,7 @@ using UnityEngine;
 public class MobMovement : MonoBehaviour
 {
     public Transform player;
-    public float moveSpeed = 3f;
+    public float moveSpeed = 0.2f;
     private Rigidbody2D rb;
     private Vector2 movement; 
 
@@ -25,7 +25,8 @@ public class MobMovement : MonoBehaviour
         Vector3 direction = player.position - transform.position;
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         rb.rotation = angle;
-        direction.Normalize();
+        //direction.Normalize();
+        //direction.Normalize slowed mobs down as they got closer to Player Character
         movement = direction;
     }
     private void FixedUpdate() 
