@@ -31,7 +31,7 @@ public class MobSpawn : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(.1f);
+            yield return new WaitForSeconds(.5f);
             SpawnMob(mob,Random.Range(1, 5));
         }
     }
