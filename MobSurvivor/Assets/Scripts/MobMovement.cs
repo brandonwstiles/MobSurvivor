@@ -8,7 +8,6 @@ public class MobMovement : MonoBehaviour
     public float moveSpeed = 0.2f;
     private Rigidbody2D rb;
     private Vector2 direction;
-    //public bool isCollision;
     public bool isPlayer;
 
 
@@ -44,13 +43,11 @@ public class MobMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        //isCollision = true;
         if(collision.gameObject.tag == "Player")
             isPlayer = true;
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
-        //isCollision = false;
         if(collision.gameObject.tag == "Player")
             isPlayer = false;
     }
