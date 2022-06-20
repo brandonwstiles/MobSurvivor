@@ -5,7 +5,7 @@ using UnityEngine;
 public class MobMovement : MonoBehaviour
 {
     public Transform player;
-    public float moveSpeed = 1f;
+    public float moveSpeed = 3f;
     private Rigidbody2D rb;
     private Vector2 movement; 
 
