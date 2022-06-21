@@ -8,7 +8,6 @@ public class PlayerHealth : MonoBehaviour
     public int maxHealth;
     public int currentHealth;
     public HPbar healthbar;
-    public bool isPlayer;
 
     // Start is called before the first frame update
     // Setting maxHealth to maxhealth based on healthlevel while setting current health at the start of the level to max health and letting healthbar reflect that

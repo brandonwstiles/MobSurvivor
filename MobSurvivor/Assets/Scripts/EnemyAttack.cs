@@ -45,7 +45,7 @@ public class EnemyAttack : MonoBehaviour
             {
                 playerhealth.TakeDamage(5);
             }
-            yield return new WaitForSeconds(.5f);
+            yield return new WaitForSeconds(.3f);
         }
     }
 }
