@@ -17,7 +17,7 @@ public class HPbar : MonoBehaviour
     // Setting the slider on Healthbar to current Health
     public void SetCurrentHealth(int currentHealth)
     {
-        slider.value -= currentHealth;
+        slider.value = currentHealth;
         
     }
 

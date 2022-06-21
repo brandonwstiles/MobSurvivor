@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MobMovement : MonoBehaviour
 {
-    public Transform player;
+    public GameObject player;
     public float moveSpeed = 0.2f;
     private Rigidbody2D rb;
     private Vector2 direction;
@@ -15,13 +15,13 @@ public class MobMovement : MonoBehaviour
     void Start()
     {
         rb = this.GetComponent<Rigidbody2D>();
-        player = GameObject.FindGameObjectWithTag("Player").transform;
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame
     void Update()
     {
-        direction = player.position - transform.position;
+        direction = player.transform.position - transform.position;
         //float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         //rb.rotation = angle;
         direction.Normalize();
@@ -44,7 +44,9 @@ public class MobMovement : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.tag == "Player")
+        {
             isPlayer = true;
+        }
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
