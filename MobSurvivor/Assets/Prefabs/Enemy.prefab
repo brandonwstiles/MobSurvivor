@@ -134,7 +134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  moveSpeed: 0.2
+  moveSpeed: 1
   isPlayer: 0
 --- !u!50 &2503929050242380219
 Rigidbody2D:
@@ -172,7 +172,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.06
+  m_Radius: 0.36
 --- !u!114 &3744338534118148733
 MonoBehaviour:
   m_ObjectHideFlags: 0
