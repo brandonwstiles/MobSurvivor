@@ -6,13 +6,13 @@ public class EnemyAttack : MonoBehaviour
 {
     public GameObject player;
     public bool isPlayer;
-    public PlayerHealth playerhealth;
+    public Health playerhealth;
 
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        playerhealth = player.GetComponent<PlayerHealth>();
+        playerhealth = player.GetComponent<Health>();
         StartCoroutine(AttackCooldown());
     }
 

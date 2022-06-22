@@ -23,7 +23,7 @@ public class BulletControl : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        collision.gameObject.GetComponent<EnemyHealth>().TakeDamage(damage);
+        collision.gameObject.GetComponent<Health>().TakeDamage(damage);
         gameObject.SetActive(false);
     }
 }
