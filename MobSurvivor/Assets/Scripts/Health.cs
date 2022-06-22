@@ -27,8 +27,8 @@ public class Health : MonoBehaviour
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
-        //if (currentHealth < 1)
-            //Death();
+        if (currentHealth < 1)
+            Death();
 
     }
     private void Death()

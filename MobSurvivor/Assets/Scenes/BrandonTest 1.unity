@@ -222,6 +222,14 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1528730363826919203, guid: 904abdb897509de4993bd56b727cee7d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -298.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1528730363826919203, guid: 904abdb897509de4993bd56b727cee7d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 174.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4094563731495861319, guid: 904abdb897509de4993bd56b727cee7d, type: 3}
       propertyPath: m_Name
       value: HUD
