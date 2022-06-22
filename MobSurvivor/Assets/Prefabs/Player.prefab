@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4260011478939148763}
   - component: {fileID: 785559357235937235}
   - component: {fileID: 785559357235937234}
-  - component: {fileID: 581054302}
+  - component: {fileID: 5341710188425887477}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -73,7 +73,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.07
---- !u!114 &581054302
+--- !u!114 &5341710188425887477
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -82,13 +82,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 4260011478939148762}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27d8501b145d55048b6609aed811e600, type: 3}
+  m_Script: {fileID: 11500000, guid: b5a11e9fed33b844aa116f49781f3751, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthLevel: 10
+  healthPerLevel: 10
   maxHealth: 0
   currentHealth: 0
-  healthbar: {fileID: 0}
+  level: 1
 --- !u!1 &4260011479910178710
 GameObject:
   m_ObjectHideFlags: 0
