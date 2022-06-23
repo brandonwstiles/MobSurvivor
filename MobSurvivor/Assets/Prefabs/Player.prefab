@@ -12,7 +12,11 @@ GameObject:
   - component: {fileID: 785559357235937235}
   - component: {fileID: 785559357235937234}
   - component: {fileID: 5341710188425887477}
+<<<<<<< Updated upstream
   - component: {fileID: 1213404555}
+=======
+  - component: {fileID: 600199406}
+>>>>>>> Stashed changes
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -90,7 +94,11 @@ MonoBehaviour:
   maxHealth: 0
   currentHealth: 0
   level: 1
+<<<<<<< Updated upstream
 --- !u!114 &1213404555
+=======
+--- !u!114 &600199406
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -99,6 +107,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4260011478939148762}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< Updated upstream
   m_Script: {fileID: 11500000, guid: b5a11e9fed33b844aa116f49781f3751, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -106,6 +115,13 @@ MonoBehaviour:
   maxHealth: 0
   currentHealth: 0
   level: 1
+=======
+  m_Script: {fileID: 11500000, guid: 7cbc56e4b6af9264bbc77c4863a59bd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerMS: 5
+  rb: {fileID: 785559357235937235}
+>>>>>>> Stashed changes
 --- !u!1 &4260011479910178710
 GameObject:
   m_ObjectHideFlags: 0
