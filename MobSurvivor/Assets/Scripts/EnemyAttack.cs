@@ -13,7 +13,6 @@ public class EnemyAttack : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player");
         playerhealth = player.GetComponent<Health>();
-        StartCoroutine(AttackCooldown());
     }
 
     // Update is called once per frame
@@ -26,6 +25,7 @@ public class EnemyAttack : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             isPlayer = true;
+            StartCoroutine(AttackCooldown());
         }
     }
     
@@ -43,9 +43,9 @@ public class EnemyAttack : MonoBehaviour
         {
             if (isPlayer)
             {
-                playerhealth.TakeDamage(5);
+                playerhealth.TakeDamage(1);
             }
-            yield return new WaitForSeconds(.3f);
+            yield return new WaitForSeconds(1f);
         }
     }
 }
