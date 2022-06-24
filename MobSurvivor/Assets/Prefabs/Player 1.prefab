@@ -259,9 +259,8 @@ GameObject:
   - component: {fileID: 5436292534616175184}
   - component: {fileID: 5436292534616175183}
   - component: {fileID: 5436292534616175182}
-  - component: {fileID: 5436292534616175181}
-  - component: {fileID: 5436292534616175180}
   - component: {fileID: 5436292534616175179}
+  - component: {fileID: 689606122}
   m_Layer: 0
   m_Name: Player 1
   m_TagString: Player
@@ -323,38 +322,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.07
---- !u!114 &5436292534616175181
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5436292534616175174}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5a11e9fed33b844aa116f49781f3751, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthPerLevel: 10
-  maxHealth: 0
-  currentHealth: 0
-  level: 1
---- !u!114 &5436292534616175180
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5436292534616175174}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5a11e9fed33b844aa116f49781f3751, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthPerLevel: 10
-  maxHealth: 0
-  currentHealth: 0
-  level: 1
 --- !u!114 &5436292534616175179
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -371,3 +338,17 @@ MonoBehaviour:
   maxHealth: 0
   currentHealth: 0
   level: 1
+--- !u!114 &689606122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5436292534616175174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cbc56e4b6af9264bbc77c4863a59bd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerMS: 10
+  rb: {fileID: 5436292534616175183}
